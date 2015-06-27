@@ -59,11 +59,11 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zqT-qd-ar0" customClass="AccessoryCollectionView" customModule="ComicBookMaker" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="464" width="496" height="206"/>
                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ahU-Y0-Jbt">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ahU-Y0-Jbt">
                                     <size key="itemSize" width="142" height="135"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="70"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="editCell" id="NuS-k1-d9c" customClass="EditCollectionViewCell" customModule="ComicBookMaker" customModuleProvider="target">
@@ -79,6 +79,7 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <size key="customSize" width="142" height="135"/>
                                         <connections>
                                             <outlet property="accessoryImage" destination="qKi-vd-f35" id="bmj-Wy-fFE"/>
                                         </connections>
