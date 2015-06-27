@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F2D834A1B3E68B10006768E /* AccessoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2D83491B3E68B10006768E /* AccessoryCollectionView.swift */; };
+		6F2D834D1B3E68F40006768E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2D834C1B3E68F40006768E /* Constants.swift */; };
 		CD3CD3F71B3E1D740020C0C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3CD3F61B3E1D740020C0C4 /* AppDelegate.swift */; };
 		CD3CD3F91B3E1D740020C0C4 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3CD3F81B3E1D740020C0C4 /* CameraViewController.swift */; };
 		CD3CD3FC1B3E1D740020C0C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3CD3FA1B3E1D740020C0C4 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F2D83491B3E68B10006768E /* AccessoryCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryCollectionView.swift; sourceTree = "<group>"; };
+		6F2D834C1B3E68F40006768E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CD3CD3F11B3E1D740020C0C4 /* ComicBookMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComicBookMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3CD3F51B3E1D740020C0C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD3CD3F61B3E1D740020C0C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F2D834B1B3E68D00006768E /* Regulars */ = {
+			isa = PBXGroup;
+			children = (
+				6F2D834C1B3E68F40006768E /* Constants.swift */,
+			);
+			name = Regulars;
+			sourceTree = "<group>";
+		};
 		CD3CD3E81B3E1D740020C0C4 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +96,7 @@
 				CD3CD3FA1B3E1D740020C0C4 /* Main.storyboard */,
 				CD3CD4181B3E28430020C0C4 /* Controllers */,
 				CD3CD41B1B3E3D070020C0C4 /* Irregulars */,
+				6F2D834B1B3E68D00006768E /* Regulars */,
 				CD3CD3F41B3E1D740020C0C4 /* Supporting Files */,
 			);
 			path = ComicBookMaker;
@@ -130,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				CD3CD4191B3E3CB50020C0C4 /* EditCollectionViewCell.swift */,
+				6F2D83491B3E68B10006768E /* AccessoryCollectionView.swift */,
 			);
 			name = Irregulars;
 			sourceTree = "<group>";
@@ -236,8 +250,10 @@
 			files = (
 				CD3CD41A1B3E3CB50020C0C4 /* EditCollectionViewCell.swift in Sources */,
 				CD3CD3F91B3E1D740020C0C4 /* CameraViewController.swift in Sources */,
+				6F2D834A1B3E68B10006768E /* AccessoryCollectionView.swift in Sources */,
 				CD3CD3F71B3E1D740020C0C4 /* AppDelegate.swift in Sources */,
 				CD3CD4171B3E283A0020C0C4 /* EditViewController.swift in Sources */,
+				6F2D834D1B3E68F40006768E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +449,7 @@
 				CD3CD4121B3E1D740020C0C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD3CD4131B3E1D740020C0C4 /* Build configuration list for PBXNativeTarget "ComicBookMakerTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +458,7 @@
 				CD3CD4151B3E1D740020C0C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

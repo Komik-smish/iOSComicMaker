@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BFEE0AAC-DF72-45C7-8A13-F23DBDB16006</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ComicBookMaker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>82AC126EF605A305A11677AE923FDB174ECE6560</key>
+		<string>https://github.com/Komik-smish/iOSComicMaker.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ComicBookMaker.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>82AC126EF605A305A11677AE923FDB174ECE6560</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Komik-smish/iOSComicMaker.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>82AC126EF605A305A11677AE923FDB174ECE6560</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>82AC126EF605A305A11677AE923FDB174ECE6560</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSComicMaker</string>
+		</dict>
+	</array>
+</dict>
+</plist>

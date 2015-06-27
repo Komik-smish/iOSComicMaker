@@ -14,17 +14,15 @@ class EditViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     @IBOutlet weak var editImageView: UIImageView!
     @IBOutlet weak var imageCollection: UICollectionView!
+
     
-    var specialImages = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        imageCollection.dataSource = self
+        imageCollection.delegate = self 
         editImageView.image = originalimage
-        
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,14 +41,29 @@ class EditViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        
+       
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("editCell", forIndexPath: indexPath) as! EditCollectionViewCell
+        
+        //let accessory = accessoryImages[indexPath.item]
+        let sword: UIImage = accessoryImages[3]!
+        
+        cell.accessoryImage.image = sword
+    
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
        
+        return accessoryImages.count
+    }
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
+    
+
     
 
 }
