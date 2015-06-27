@@ -28,8 +28,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         let image = info[UIImagePickerControllerOriginalImage] as? UIImage
         
-        originalimage = image
-        
+        originalimage = resizeImageWithSize(image!, CGSizeMake(640, 480))
+
         let editVC = self.storyboard?.instantiateViewControllerWithIdentifier("editVC") as! EditViewController
         
         self.navigationController?.pushViewController(editVC, animated: true)

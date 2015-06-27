@@ -34,6 +34,19 @@
                     <view key="view" contentMode="scaleToFill" id="MZ3-s6-XhH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hOe-t4-e9D">
+                                <rect key="frame" x="323" y="0.0" width="277" height="471"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LXV-Os-z55">
+                                <rect key="frame" x="49" y="108" width="188" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="textbubble" translatesAutoresizingMaskIntoConstraints="NO" id="LdH-kA-ISp">
+                                <rect key="frame" x="11" y="14" width="320" height="259"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -53,48 +66,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKt-NQ-TrH">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="464"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iKt-NQ-TrH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="492"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="fId-Y9-oBQ"/>
+                                    <constraint firstAttribute="height" constant="492" id="x1S-JA-Dbb"/>
+                                </constraints>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zqT-qd-ar0" customClass="AccessoryCollectionView" customModule="ComicBookMaker" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="464" width="496" height="206"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zqT-qd-ar0" customClass="AccessoryCollectionView" customModule="ComicBookMaker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ahU-Y0-Jbt">
-                                    <size key="itemSize" width="142" height="135"/>
+                                    <size key="itemSize" width="78" height="72"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="70"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="26"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="editCell" id="NuS-k1-d9c" customClass="EditCollectionViewCell" customModule="ComicBookMaker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="142" height="135"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKi-vd-f35">
-                                                    <rect key="frame" x="0.0" y="0.0" width="142" height="135"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKi-vd-f35">
+                                                    <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <size key="customSize" width="142" height="135"/>
+                                        <size key="customSize" width="72" height="72"/>
                                         <connections>
                                             <outlet property="accessoryImage" destination="qKi-vd-f35" id="bmj-Wy-fFE"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuC-JJ-qSu">
-                                <rect key="frame" x="528" y="538" width="34" height="30"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="saveImage:" destination="UtV-Am-BZT" eventType="touchUpInside" id="VE5-a6-PAP"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRx-Kz-VLl">
                                 <rect key="frame" x="16" y="35" width="58" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
@@ -105,8 +113,27 @@
                                     <action selector="backButton:" destination="UtV-Am-BZT" eventType="touchUpInside" id="TaG-dE-hEm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuC-JJ-qSu">
+                                <rect key="frame" x="24" y="83" width="50" height="50"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendSavedImage:" destination="UtV-Am-BZT" eventType="touchUpInside" id="lS9-Ld-IWn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zqT-qd-ar0" firstAttribute="top" secondItem="iKt-NQ-TrH" secondAttribute="bottom" constant="8" id="4PA-BR-elq"/>
+                            <constraint firstItem="zqT-qd-ar0" firstAttribute="leading" secondItem="HSz-VA-oFr" secondAttribute="leading" id="4oh-SY-JBW"/>
+                            <constraint firstAttribute="trailing" secondItem="zqT-qd-ar0" secondAttribute="trailing" id="8Fd-bu-EMx"/>
+                            <constraint firstAttribute="trailing" secondItem="iKt-NQ-TrH" secondAttribute="trailing" id="C0d-DO-ev6"/>
+                            <constraint firstItem="Q6w-tp-qsM" firstAttribute="top" secondItem="zqT-qd-ar0" secondAttribute="bottom" id="VGE-Pf-j8R"/>
+                            <constraint firstItem="iKt-NQ-TrH" firstAttribute="leading" secondItem="HSz-VA-oFr" secondAttribute="leading" id="ets-FZ-lt3"/>
+                            <constraint firstItem="iKt-NQ-TrH" firstAttribute="top" secondItem="HSz-VA-oFr" secondAttribute="top" id="fTJ-cg-iHu"/>
+                            <constraint firstItem="zqT-qd-ar0" firstAttribute="top" secondItem="iKt-NQ-TrH" secondAttribute="bottom" constant="8" id="vif-HF-Swl"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="editImageView" destination="iKt-NQ-TrH" id="jPj-LA-rqe"/>
@@ -136,4 +163,7 @@
             <point key="canvasLocation" x="-221" y="96"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="textbubble" width="320" height="249"/>
+    </resources>
 </document>
