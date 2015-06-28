@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6214" systemVersion="14A314h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6207"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,31 +10,52 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 Whitney Lauren. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="439" width="441" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="textbubble" translatesAutoresizingMaskIntoConstraints="NO" id="Crx-HA-TH9">
+                    <rect key="frame" x="15" y="8" width="320" height="249"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="2AQ-iS-9oq"/>
+                        <constraint firstAttribute="height" constant="249" id="HL8-Br-Zva"/>
+                    </constraints>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sword" translatesAutoresizingMaskIntoConstraints="NO" id="tV1-Hy-mNg">
+                    <rect key="frame" x="375" y="52" width="62" height="149"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="5OA-lJ-v9G"/>
+                        <constraint firstAttribute="height" constant="149" id="xzi-zD-PDw"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iOS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pt8-iE-iNm">
+                    <rect key="frame" x="121" y="95" width="108" height="46"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ComicBookMaker" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="20" y="140" width="441" height="43"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Pasted image at 2015_06_27 06_02 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Pzg-ZD-nde">
+                    <rect key="frame" x="48" y="291" width="379" height="141"/>
+                    <color key="backgroundColor" red="0.98623949289321899" green="0.13813011917143322" blue="0.072480361981712135" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="141" id="syY-hQ-nLy"/>
+                    </constraints>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="0.3418013629230009" blue="0.060815925129709902" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="1" id="5cJ-9S-tgC"/>
-                <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
-                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
+                <constraint firstItem="Pzg-ZD-nde" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="48" id="2Wy-i2-V2d"/>
+                <constraint firstItem="tV1-Hy-mNg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="52" id="FUE-6U-2SV"/>
+                <constraint firstAttribute="trailing" secondItem="Pzg-ZD-nde" secondAttribute="trailing" constant="53" id="N8f-NP-fwj"/>
+                <constraint firstAttribute="bottom" secondItem="Pzg-ZD-nde" secondAttribute="bottom" constant="48" id="X0i-hu-mg7"/>
+                <constraint firstAttribute="trailing" secondItem="tV1-Hy-mNg" secondAttribute="trailing" constant="43" id="Z3h-BF-PHG"/>
+                <constraint firstItem="Crx-HA-TH9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="lcg-qT-rzK"/>
+                <constraint firstItem="Crx-HA-TH9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="yBJ-de-Kaf"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
+    <resources>
+        <image name="Pasted image at 2015_06_27 06_02 PM" width="322" height="122"/>
+        <image name="sword" width="62" height="149"/>
+        <image name="textbubble" width="320" height="249"/>
+    </resources>
 </document>

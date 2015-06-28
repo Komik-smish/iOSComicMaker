@@ -21,6 +21,15 @@
 		CD3CD40D1B3E1D740020C0C4 /* ComicBookMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3CD40C1B3E1D740020C0C4 /* ComicBookMakerTests.swift */; };
 		CD3CD4171B3E283A0020C0C4 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3CD4161B3E283A0020C0C4 /* EditViewController.swift */; };
 		CD3CD41A1B3E3CB50020C0C4 /* EditCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3CD4191B3E3CB50020C0C4 /* EditCollectionViewCell.swift */; };
+		E85A0C381B3FB8CC0097BB5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85A0C371B3FB8CC0097BB5D /* AVFoundation.framework */; };
+		E85A0C3B1B3FC2580097BB5D /* icepour.wav in Resources */ = {isa = PBXBuildFile; fileRef = E85A0C3A1B3FC2580097BB5D /* icepour.wav */; };
+		E85A0C3D1B3FC2680097BB5D /* firecrackers.wav in Resources */ = {isa = PBXBuildFile; fileRef = E85A0C3C1B3FC2680097BB5D /* firecrackers.wav */; };
+		E85A0C3F1B3FC2730097BB5D /* Apollo11_OneSmallStep.wav in Resources */ = {isa = PBXBuildFile; fileRef = E85A0C3E1B3FC2730097BB5D /* Apollo11_OneSmallStep.wav */; };
+		E85A0C411B3FC2810097BB5D /* factorywhistle.wav in Resources */ = {isa = PBXBuildFile; fileRef = E85A0C401B3FC2810097BB5D /* factorywhistle.wav */; };
+		E85A0C431B3FC2900097BB5D /* tiger.wav in Resources */ = {isa = PBXBuildFile; fileRef = E85A0C421B3FC2900097BB5D /* tiger.wav */; };
+		E85A0C451B3FC4620097BB5D /* ScrollViewsResources in Resources */ = {isa = PBXBuildFile; fileRef = E85A0C441B3FC4620097BB5D /* ScrollViewsResources */; };
+		E85A0C471B3FD3800097BB5D /* ScrollViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A0C461B3FD3800097BB5D /* ScrollViewContainer.swift */; };
+		E85A0C491B4054100097BB5D /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A0C481B4054100097BB5D /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +64,15 @@
 		CD3CD40C1B3E1D740020C0C4 /* ComicBookMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicBookMakerTests.swift; sourceTree = "<group>"; };
 		CD3CD4161B3E283A0020C0C4 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		CD3CD4191B3E3CB50020C0C4 /* EditCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCollectionViewCell.swift; sourceTree = "<group>"; };
+		E85A0C371B3FB8CC0097BB5D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E85A0C3A1B3FC2580097BB5D /* icepour.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = icepour.wav; sourceTree = "<group>"; };
+		E85A0C3C1B3FC2680097BB5D /* firecrackers.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = firecrackers.wav; sourceTree = "<group>"; };
+		E85A0C3E1B3FC2730097BB5D /* Apollo11_OneSmallStep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Apollo11_OneSmallStep.wav; sourceTree = "<group>"; };
+		E85A0C401B3FC2810097BB5D /* factorywhistle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = factorywhistle.wav; sourceTree = "<group>"; };
+		E85A0C421B3FC2900097BB5D /* tiger.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tiger.wav; sourceTree = "<group>"; };
+		E85A0C441B3FC4620097BB5D /* ScrollViewsResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ScrollViewsResources; sourceTree = "<group>"; };
+		E85A0C461B3FD3800097BB5D /* ScrollViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewContainer.swift; sourceTree = "<group>"; };
+		E85A0C481B4054100097BB5D /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85A0C381B3FB8CC0097BB5D /* AVFoundation.framework in Frameworks */,
 				83F3810344CAC9FF3651CEC1 /* Pods_ComicBookMaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +100,7 @@
 			children = (
 				6F2D834C1B3E68F40006768E /* Constants.swift */,
 				6F0CBFD61B3F02D700D9B351 /* RailsRequest.swift */,
+				E85A0C391B3FBA5E0097BB5D /* AudioFiles */,
 			);
 			name = Regulars;
 			sourceTree = "<group>";
@@ -120,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				CD3CD3FA1B3E1D740020C0C4 /* Main.storyboard */,
+				E85A0C441B3FC4620097BB5D /* ScrollViewsResources */,
 				CD3CD4181B3E28430020C0C4 /* Controllers */,
 				CD3CD41B1B3E3D070020C0C4 /* Irregulars */,
 				6F2D834B1B3E68D00006768E /* Regulars */,
@@ -171,6 +192,8 @@
 			children = (
 				CD3CD4191B3E3CB50020C0C4 /* EditCollectionViewCell.swift */,
 				6F2D83491B3E68B10006768E /* AccessoryCollectionView.swift */,
+				E85A0C461B3FD3800097BB5D /* ScrollViewContainer.swift */,
+				E85A0C481B4054100097BB5D /* File.swift */,
 			);
 			name = Irregulars;
 			sourceTree = "<group>";
@@ -178,9 +201,22 @@
 		DAC4B9A9D84C7A113B39A6AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E85A0C371B3FB8CC0097BB5D /* AVFoundation.framework */,
 				BFADC9112BD4B419FDA72D68 /* Pods_ComicBookMaker.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E85A0C391B3FBA5E0097BB5D /* AudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E85A0C3A1B3FC2580097BB5D /* icepour.wav */,
+				E85A0C3C1B3FC2680097BB5D /* firecrackers.wav */,
+				E85A0C3E1B3FC2730097BB5D /* Apollo11_OneSmallStep.wav */,
+				E85A0C401B3FC2810097BB5D /* factorywhistle.wav */,
+				E85A0C421B3FC2900097BB5D /* tiger.wav */,
+			);
+			name = AudioFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,10 +302,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85A0C3F1B3FC2730097BB5D /* Apollo11_OneSmallStep.wav in Resources */,
+				E85A0C3D1B3FC2680097BB5D /* firecrackers.wav in Resources */,
 				CD3CD3FC1B3E1D740020C0C4 /* Main.storyboard in Resources */,
+				E85A0C3B1B3FC2580097BB5D /* icepour.wav in Resources */,
+				E85A0C451B3FC4620097BB5D /* ScrollViewsResources in Resources */,
 				CD3CD4011B3E1D740020C0C4 /* LaunchScreen.xib in Resources */,
 				6F0CBFD91B3F10D300D9B351 /* Podfile in Resources */,
+				E85A0C411B3FC2810097BB5D /* factorywhistle.wav in Resources */,
 				CD3CD3FE1B3E1D740020C0C4 /* Images.xcassets in Resources */,
+				E85A0C431B3FC2900097BB5D /* tiger.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +382,11 @@
 				CD3CD3F91B3E1D740020C0C4 /* CameraViewController.swift in Sources */,
 				6F2D834A1B3E68B10006768E /* AccessoryCollectionView.swift in Sources */,
 				6F0CBFD71B3F02D700D9B351 /* RailsRequest.swift in Sources */,
+				E85A0C491B4054100097BB5D /* File.swift in Sources */,
 				CD3CD3F71B3E1D740020C0C4 /* AppDelegate.swift in Sources */,
 				CD3CD4171B3E283A0020C0C4 /* EditViewController.swift in Sources */,
 				6F2D834D1B3E68F40006768E /* Constants.swift in Sources */,
+				E85A0C471B3FD3800097BB5D /* ScrollViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

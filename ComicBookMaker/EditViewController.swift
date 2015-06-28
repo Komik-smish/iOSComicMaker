@@ -9,6 +9,7 @@
 import UIKit
 import AFNetworking
 import AFAmazonS3Manager
+import AVFoundation
 
 var originalimage: UIImage?
 
@@ -135,16 +136,31 @@ class EditViewController: UIViewController, UICollectionViewDataSource, UICollec
         
     }
     
+    var audioPlayer: AVAudioPlayer?
+    
     func addNewAccessory() {
         
         var newAccessoryView = UIImageView(frame: CGRectMake(0, 0, 200, 200))
         
         newAccessoryView.image = currentAccessory?.image
+        newAccessoryView.contentMode = .ScaleAspectFit
         newAccessoryView.center = view.center
         
-        view.addSubview(newAccessoryView)
+        editImageView.addSubview(newAccessoryView)
         
         currentAccessory = newAccessoryView
+        
+        if var filePath = NSBundle.mainBundle().pathForResource("tiger", ofType: "wav") {
+            
+            var url = NSURL.fileURLWithPath(filePath)
+            audioPlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
+            audioPlayer?.enableRate = true
+            
+            audioPlayer?.play()
+            
+        } else {
+            println("file path is incorrect")
+        }
         
     }
     
@@ -184,7 +200,13 @@ class EditViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     @IBAction func sendSavedImage(sender: UIButton) {
         
-        saveImageToS3(editImageView.image!)
+        UIGraphicsBeginImageContext(self.editImageView.bounds.size)
+        let context = UIGraphicsGetCurrentContext()
+        editImageView.layer.renderInContext(context)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        UIImageWriteToSavedPhotosAlbum(newImage, nil, nil, nil)
+        saveImageToS3(newImage)
     }
     
     let s3Manager = AFAmazonS3Manager(accessKeyID: accessKey, secret: secret)
@@ -238,6 +260,11 @@ class EditViewController: UIViewController, UICollectionViewDataSource, UICollec
             
         }
         
+    }
+   
+    @IBAction func toBeginButton(sender: UIButton) {
+        
+        dismissViewControllerAnimated(false, completion: nil)
     }
     
     

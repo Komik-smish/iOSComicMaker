@@ -16,6 +16,7 @@ let API_URL = "http://salty-peak-7300.herokuapp.com"
 class RailsRequest: NSObject {
     
     var singletonAccessoriesArray: [AnyObject] = []
+    var singletonImagesArray: [AnyObject] = []
     
     class func session() -> RailsRequest { return _singleton }
     
@@ -135,7 +136,8 @@ class RailsRequest: NSObject {
 
 
                     "image_url" : imageURL,
-                    
+                    "ios" : 1
+                
                 
 //                "accessories" [
 //                
@@ -196,6 +198,38 @@ class RailsRequest: NSObject {
         
         completion()
     }
+    
+    func getImages(completion: () -> Void) {
+        
+        var info = [
+            
+            "method" : "GET",
+            "endpoint" : "/images/edits",
+            
+            
+            
+            ] as [String:AnyObject]
+        
+        requestWithInfo(info, andCompletion: { (responseInfo) -> Void in
+            
+            println("Rails Request getImages 1 \(responseInfo)")
+            
+            completion()
+            
+            if let insideResponseInfo = responseInfo as? [AnyObject] {
+                
+                self.singletonImagesArray = insideResponseInfo
+                
+                println("Rails Request getAccessories 2: \(self.singletonImagesArray)")
+                
+                completion()
+            }
+            
+        })
+        
+        completion()
+    }
+
     
 
 

@@ -34,6 +34,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         self.navigationController?.pushViewController(editVC, animated: true)
         
+        
+        
         picker.dismissViewControllerAnimated(true, completion: nil)
         
     }
